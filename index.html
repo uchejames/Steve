@@ -767,7 +767,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="head.jpg" alt="Steve - Creative Designer">
+                <img src="/mnt/user-data/uploads/581637.jpg" alt="Steve - Creative Designer">
             </div>
         </div>
     </section>
@@ -999,8 +999,16 @@
                     
                     <div class="contact-details">
                         <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/+2348023491802" target="_blank">Chat on WhatsApp</a>
+                        </div>
+                        <div class="contact-item">
                             <i class="fas fa-briefcase"></i>
                             <a href="https://www.upwork.com/freelancers/~018ba61d61d6f7a8d3?mp_source=share" target="_blank">View Upwork Profile</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-handshake"></i>
+                            <a href="https://www.fiverr.com/hybridstudios" target="_blank">Hire on Fiverr</a>
                         </div>
                         <div class="contact-item">
                             <i class="fab fa-facebook"></i>
@@ -1009,13 +1017,19 @@
                     </div>
 
                     <div class="social-links">
+                        <a href="https://wa.me/+2348023491802" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
                         <a href="https://www.upwork.com/freelancers/~018ba61d61d6f7a8d3?mp_source=share" target="_blank" title="Upwork">
                             <i class="fas fa-briefcase"></i>
+                        </a>
+                        <a href="https://www.fiverr.com/hybridstudios" target="_blank" title="Fiverr">
+                            <i class="fas fa-handshake"></i>
                         </a>
                         <a href="https://www.facebook.com/stephen.ezekiel.5201" target="_blank" title="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/stephen-ezekiel-105277261/" target="_blank" title="LinkedIn">
+                        <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                         <a href="https://github.com" target="_blank" title="GitHub">
@@ -1025,7 +1039,11 @@
                 </div>
 
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form action="https://formsubmit.co/stephenezekiel.digital@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
@@ -1139,26 +1157,6 @@
                 top: 0,
                 behavior: 'smooth'
             });
-        });
-
-        // Contact form submission
-        const contactForm = document.getElementById('contactForm');
-
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(contactForm);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const message = formData.get('message');
-
-            // Here you would typically send the data to a server
-            // For now, we'll just show an alert
-            alert(`Thank you ${name}! Your message has been received. I'll get back to you soon at ${email}.`);
-            
-            // Reset form
-            contactForm.reset();
         });
 
         // Smooth scroll for all anchor links
